@@ -4,10 +4,14 @@ class Solution:
         # for primary diagonal
         for i in range(len(mat)):
             res = res + mat[i][i]
-            
+        
+        
+        
+        
+        #For secondary diagonal
         j = len(mat[0])-1
         
-
+        
         for i in range(len(mat)):
             res = res + mat[i][j]
             j = j- 1
