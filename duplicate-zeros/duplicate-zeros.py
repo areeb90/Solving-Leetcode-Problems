@@ -3,15 +3,15 @@ class Solution:
         """
         Do not return anything, modify arr in-place instead.
         """
+        index = 0
+        length = len(arr)
         
-        i = 0
-        l = len(arr)
-        while i<l:
-            if arr[i]==0:
+        while index < length:
+            if arr[index]== 0:
                 arr.pop(-1)
-                arr.insert(i , 0)
+                arr.insert(index , 0 )
                 
-                i+=1
-            i+=1
-            
+                index +=1
+                
+            index +=1
             
