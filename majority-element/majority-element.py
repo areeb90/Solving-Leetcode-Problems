@@ -1,10 +1,5 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        nums = sorted(nums)
-        midIndex=len(nums)//2
-        return nums[midIndex]
-        
-        
 #         dic={}
 #         for n in nums:
 #             if n not in dic:
@@ -15,4 +10,10 @@ class Solution:
 #             if dic[n] > (len(nums)/2):
 #                 return n
             
+#       time complexity = O(n)
+#       space complexity = O(1)
             
+        
+            nums = sorted(nums)
+            midIndex=len(nums)//2
+            return nums[midIndex]
